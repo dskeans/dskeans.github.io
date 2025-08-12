@@ -1,24 +1,65 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>archiVE — Live</title>
-<style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>arcHIVE — Capture • Verify • Trust</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#d62828",
+            paper: "#f4f0e8"
+          },
+          fontFamily: {
+            sans: ["system-ui", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
     body {
-        font-family: system-ui, sans-serif;
-        margin: 3rem;
-        max-width: 60ch;
-        line-height: 1.5;
+      background-color: #f4f0e8;
+      background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+      background-size: 4px 4px;
     }
-    h1 {
-        color: #d62828;
-    }
-</style>
+  </style>
 </head>
-<body>
-    <h1>archiVE is live</h1>
-    <p>Deployed from dskeans/archives (GitHub Pages).</p>
-    <p>This is a static HTML placeholder. Replace this text with your actual site content.</p>
+<body class="h-full text-neutral-900">
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center min-h-screen text-center px-6">
+    <img src="IMG_3579.PNG" alt="arcHIVE Logo" class="w-40 mb-6">
+    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-neutral-900">
+      Capture. Verify. Trust.
+    </h1>
+    <p class="mt-4 max-w-2xl text-lg text-neutral-700">
+      <span class="font-semibold text-brand">arcHIVE</span> is the first camera platform that bakes in
+      <span class="font-semibold">C2PA content credentials</span>, <span class="font-semibold">blockchain tokenization</span>,
+      and <span class="font-semibold">IPFS storage</span> at the moment of capture.
+    </p>
+    <a href="#learn-more" class="mt-8 inline-block bg-brand text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-red-700">
+      Learn More
+    </a>
+  </section>
+
+  <!-- Pitch Section -->
+  <section id="learn-more" class="max-w-4xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold mb-4">Why arcHIVE?</h2>
+    <p class="mb-6">
+      In a world of AI fakes, deepfake videos, and misinformation, the authenticity of media is under attack.
+      Journalists, creators, and investigators need a way to prove their content’s origin beyond doubt.
+    </p>
+    <p class="mb-6">
+      arcHIVE locks down media authenticity from the very moment you hit record, producing a cryptographic
+      fingerprint, a C2PA manifest, and an optional blockchain token that travel with your file forever.
+    </p>
+    <p>
+      Whether you’re in the field, the courtroom, or the creator studio, arcHIVE ensures your media is
+      <span class="font-semibold">verifiable, tamper-evident, and trusted</span>.
+    </p>
+  </section>
 </body>
 </html>
