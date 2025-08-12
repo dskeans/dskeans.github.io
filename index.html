@@ -32,6 +32,11 @@
   <!-- Hero Section -->
   <section class="flex flex-col items-center justify-center min-h-screen text-center px-6">
     <img src="IMG_3579.PNG" alt="arcHIVE Logo" class="w-40 mb-6">
+    <div class="inline-flex items-center gap-2 rounded-full border border-neutral-300 bg-white/80 px-4 py-1 text-xs sm:text-sm mb-4">
+      <span class="inline-block h-2 w-2 rounded-full bg-brand"></span>
+      <strong>ONLY iOS app offering Level&nbsp;2 certified*</strong>
+      <span class="text-neutral-500"> • first-in-the-field new tech</span>
+    </div>
     <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-neutral-900">
       Capture. Verify. Trust.
     </h1>
@@ -43,6 +48,7 @@
     <a href="#learn-more" class="mt-8 inline-block bg-brand text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-red-700">
       Learn More
     </a>
+    <p class="mt-3 text-xs text-neutral-500">*Marketing claim provided by arcHIVE. Contact us for certification details.</p>
   </section>
 
   <!-- Pitch Section -->
@@ -61,6 +67,8 @@
       <span class="font-semibold">verifiable, tamper-evident, and trusted</span>.
     </p>
   </section>
+
+  <!-- (kept) Second learn-more section you already added -->
   <section id="learn-more" style="padding: 4rem 0; max-width: 70ch; margin: auto; font-family: system-ui;">
     <h2 style="color: #d62828; font-size: 2rem; margin-bottom: 1rem;">Why arcHIVE is the Future of Media Verification</h2>
     <p>
@@ -83,7 +91,93 @@
         We’re seeking strategic partners and VC funding to scale globally.  
         Contact us to be part of the movement securing truth in the digital age.
     </p>
-</section>
+  </section>
+
+  <!-- NEW: Features block (added, nothing removed) -->
+  <section id="features" class="max-w-6xl mx-auto py-20 px-6">
+    <h2 class="text-3xl font-bold text-brand mb-8">Features that sell themselves</h2>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="rounded-xl border border-neutral-200 bg-white/90 p-5 shadow-sm">
+        <h3 class="font-semibold mb-1">C2PA Content Credentials</h3>
+        <p class="text-neutral-600">Embed verifiable provenance (JUMBF) with every capture.</p>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white/90 p-5 shadow-sm">
+        <h3 class="font-semibold mb-1">Capture-time Signing</h3>
+        <p class="text-neutral-600">On-device keypair; Ed25519 signatures; tamper-evident hashes.</p>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white/90 p-5 shadow-sm">
+        <h3 class="font-semibold mb-1">Chain Anchoring (opt-in)</h3>
+        <p class="text-neutral-600">Anchor content hashes to public ledgers for immutable proofs.</p>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white/90 p-5 shadow-sm">
+        <h3 class="font-semibold mb-1">IPFS Pinning</h3>
+        <p class="text-neutral-600">Durable, content-addressed storage with pin status callbacks.</p>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white/90 p-5 shadow-sm">
+        <h3 class="font-semibold mb-1">Verifier SDK + Widget</h3>
+        <p class="text-neutral-600">Drop-in verifier for web/apps; green/red trust signals.</p>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white/90 p-5 shadow-sm">
+        <h3 class="font-semibold mb-1">Audit Trail & Exports</h3>
+        <p class="text-neutral-600">Signed logs; export C2PA manifest + JSON evidence bundle.</p>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white/90 p-5 shadow-sm">
+        <h3 class="font-semibold mb-1">Offline First</h3>
+        <p class="text-neutral-600">Capture without signal; attest & sync when back online.</p>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white/90 p-5 shadow-sm">
+        <h3 class="font-semibold mb-1">Roles & Access</h3>
+        <p class="text-neutral-600">Org workspaces; RBAC; per-asset permissions & revocation.</p>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white/90 p-5 shadow-sm">
+        <h3 class="font-semibold mb-1">Enterprise Controls</h3>
+        <p class="text-neutral-600">SSO (SAML/OIDC), SCIM provisioning, custom retention policies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW: Investor & Industry Pitch (added, nothing removed) -->
+  <section id="investor-pitch" class="max-w-5xl mx-auto py-20 px-6 bg-white/80 rounded-lg shadow-lg mt-12">
+    <h2 class="text-3xl font-bold text-brand mb-6">For Investors & Industry Leaders</h2>
+    <p class="mb-6">
+      Fake and manipulated media are eroding trust at a global scale, costing governments, enterprises, and individuals billions.
+      <span class="font-semibold">arcHIVE</span> is the platform that captures, verifies, and locks media authenticity at the source —
+      creating indisputable, audit-ready evidence with every photo and video.
+    </p>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">🚀 Market Opportunity</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Projected $4.5B+ content authenticity spend by 2030</li>
+          <li>First-mover advantage in C2PA + blockchain + IPFS integration</li>
+          <li>Cross-sector demand: journalism, insurance, legal, public safety</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">🔒 Competitive Edge</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Real-time capture signing (Ed25519), tamper-evident hashing</li>
+          <li>Built-in IPFS + optional on-chain anchoring for origin proof</li>
+          <li>On-device & cloud verification with trust signals</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="text-xl font-semibold mt-10 mb-2">📦 Deployment & Integration</h3>
+    <p class="mb-4">
+      iOS app (Level 2 certified*) with enterprise APIs. Deploy as mobile app, private appliance, or cloud service. 
+      Integrates with CMS/DAM, evidence systems, and newsroom workflows.
+    </p>
+    <h3 class="text-xl font-semibold mt-8 mb-2">💼 Procurement & Next Steps</h3>
+    <ul class="list-disc pl-5 space-y-1 mb-6">
+      <li>Pilot program for qualified partners</li>
+      <li>Custom licensing and SLAs for enterprise & public sector</li>
+      <li>Security questionnaires & DPA support</li>
+    </ul>
+    <a href="mailto:founder@archive.example" class="inline-block bg-brand text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-red-700">
+      Request a Pilot / Investment Deck
+    </a>
+    <p class="mt-3 text-xs text-neutral-500">*Claim provided by arcHIVE. Contact us for documentation of Level 2 certification.</p>
+  </section>
 
 </body>
 </html>
